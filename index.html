@@ -152,36 +152,144 @@
             <div>
                 <div class="input-group">
                     <label for="subject" class="input-label">Subjek Utama</label>
-                    <input type="text" id="subject" class="input-field" placeholder="Contoh: Seorang penjelajah waktu, kucing ajaib">
+                    <select id="subject" class="select-field">
+                        <option value="" data-en="">-- Pilih Subjek --</option>
+                        <option value="seorang pria" data-en="a man">Seorang Pria</option>
+                        <option value="seorang wanita" data-en="a woman">Seorang Wanita</option>
+                        <option value="seorang anak laki-laki" data-en="a boy">Seorang Anak Laki-laki</option>
+                        <option value="seorang anak perempuan" data-en="a girl">Seorang Anak Perempuan</option>
+                        <option value="sekelompok orang" data-en="a group of people">Sekelompok Orang</option>
+                        <option value="seekor kucing" data-en="a cat">Seekor Kucing</option>
+                        <option value="seekor anjing" data-en="a dog">Seekor Anjing</option>
+                        <option value="seekor naga" data-en="a dragon">Seekor Naga</option>
+                        <option value="sebuah robot" data-en="a robot">Sebuah Robot</option>
+                        <option value="seorang astronot" data-en="an astronaut">Seorang Astronot</option>
+                        <option value="seorang ksatria" data-en="a knight">Seorang Ksatria</option>
+                        <option value="seorang penyihir" data-en="a wizard">Seorang Penyihir</option>
+                        <option value="makhluk fantasi" data-en="a fantasy creature">Makhluk Fantasi</option>
+                        <option value="kendaraan futuristik" data-en="a futuristic vehicle">Kendaraan Futuristik</option>
+                        <option value="bangunan kuno" data-en="an ancient building">Bangunan Kuno</option>
+                        <option value="lanskap alam" data-en="a natural landscape">Lanskap Alam</option>
+                         <option value="objek abstrak" data-en="an abstract object">Objek Abstrak</option>
+                    </select>
+                    <input type="text" id="subjectCustom" class="input-field mt-2" placeholder="Atau ketik subjek kustom di sini...">
+                    <p class="suggestion-tooltip">Pilih dari daftar atau ketik subjek spesifik Anda.</p>
                 </div>
                 <div class="input-group">
                     <label for="clothing" class="input-label">Pakaian</label>
-                    <input type="text" id="clothing" class="input-field" placeholder="Contoh: jubah futuristik, kimono tradisional">
+                    <select id="clothing" class="select-field">
+                        <option value="" data-en="">-- Pilih Pakaian (Opsional) --</option>
+                        <option value="pakaian kasual modern" data-en="modern casual wear">Pakaian Kasual Modern (kaos, jeans)</option>
+                        <option value="pakaian formal" data-en="formal wear">Pakaian Formal (jas, gaun malam)</option>
+                        <option value="pakaian tradisional" data-en="traditional clothing">Pakaian Tradisional (kimono, sari, hanbok)</option>
+                        <option value="seragam" data-en="a uniform">Seragam (militer, sekolah, kerja)</option>
+                        <option value="pakaian olahraga" data-en="sportswear">Pakaian Olahraga</option>
+                        <option value="jubah panjang" data-en="a long robe">Jubah Panjang (penyihir, akademisi)</option>
+                        <option value="armor ksatria" data-en="knight's armor">Armor Ksatria</option>
+                        <option value="pakaian futuristik" data-en="futuristic clothing">Pakaian Futuristik (cyberpunk, sci-fi)</option>
+                        <option value="pakaian era Victoria" data-en="Victorian era attire">Pakaian Era Victoria</option>
+                        <option value="pakaian steampunk" data-en="steampunk attire">Pakaian Steampunk</option>
+                        <option value="kostum fantasi" data-en="fantasy costume">Kostum Fantasi (peri, elf)</option>
+                        <option value="pakaian renang" data-en="swimwear">Pakaian Renang</option>
+                        <option value="tidak mengenakan pakaian spesifik" data-en="no specific clothing">Tidak Mengenakan Pakaian Spesifik</option>
+                    </select>
+                    <input type="text" id="clothingCustom" class="input-field mt-2" placeholder="Atau ketik pakaian kustom di sini...">
+                    <p class="suggestion-tooltip">Pilih dari daftar atau ketik deskripsi pakaian.</p>
                 </div>
                 <div class="input-group">
                     <label for="origin" class="input-label">Negara Asal/Budaya (Opsional)</label>
-                    <input type="text" id="origin" class="input-field" placeholder="Contoh: Jepang era Edo, Atlantis kuno">
+                     <select id="origin" class="select-field">
+                        <option value="" data-en="">-- Pilih Negara/Budaya --</option>
+                        <option value="Indonesia" data-en="Indonesian">Indonesia</option>
+                        <option value="Jepang" data-en="Japanese">Jepang</option>
+                        <option value="Korea Selatan" data-en="South Korean">Korea Selatan</option>
+                        <option value="Tiongkok" data-en="Chinese">Tiongkok</option>
+                        <option value="Amerika Serikat" data-en="American">Amerika Serikat</option>
+                        <option value="Inggris" data-en="English">Inggris</option>
+                        <option value="Prancis" data-en="French">Prancis</option>
+                        <option value="Mesir Kuno" data-en="Ancient Egyptian">Mesir Kuno</option>
+                        <option value="Yunani Kuno" data-en="Ancient Greek">Yunani Kuno</option>
+                        <option value="kerajaan fantasi" data-en="fantasy kingdom">Kerajaan Fantasi</option>
+                        <option value="peradaban alien" data-en="alien civilization">Peradaban Alien</option>
+                        <option value="tidak spesifik" data-en="not specific">Tidak Spesifik</option>
+                    </select>
+                    <input type="text" id="originCustom" class="input-field mt-2" placeholder="Atau ketik negara/budaya kustom...">
+                    <p class="suggestion-tooltip">Pilih dari daftar atau ketik negara/budaya spesifik.</p>
                 </div>
                 <div class="input-group">
                     <label for="action" class="input-label">Aksi/Interaksi</label>
-                    <input type="text" id="action" class="input-field" placeholder="Contoh: menemukan artefak kuno, menari di bawah hujan meteor">
+                    <select id="action" class="select-field">
+                        <option value="" data-en="">-- Pilih Aksi --</option>
+                        <option value="berjalan" data-en="walking">Berjalan</option>
+                        <option value="berlari" data-en="running">Berlari</option>
+                        <option value="melompat" data-en="jumping">Melompat</option>
+                        <option value="terbang" data-en="flying">Terbang</option>
+                        <option value="menari" data-en="dancing">Menari</option>
+                        <option value="berbicara" data-en="talking">Berbicara</option>
+                        <option value="bertarung" data-en="fighting">Bertarung</option>
+                        <option value="menjelajah" data-en="exploring">Menjelajah</option>
+                        <option value="membaca buku" data-en="reading a book">Membaca Buku</option>
+                        <option value="memainkan alat musik" data-en="playing a musical instrument">Memainkan Alat Musik</option>
+                        <option value="menggunakan sihir" data-en="using magic">Menggunakan Sihir</option>
+                        <option value="bermeditasi" data-en="meditating">Bermeditasi</option>
+                        <option value="bekerja di depan komputer" data-en="working on a computer">Bekerja di Depan Komputer</option>
+                        <option value="memasak" data-en="cooking">Memasak</option>
+                        <option value="mengamati bintang" data-en="stargazing">Mengamati Bintang</option>
+                        <option value="tidak ada aksi spesifik" data-en="no specific action">Tidak Ada Aksi Spesifik</option>
+                    </select>
+                    <input type="text" id="actionCustom" class="input-field mt-2" placeholder="Atau ketik aksi kustom...">
+                    <p class="suggestion-tooltip">Pilih dari daftar atau ketik aksi spesifik.</p>
                 </div>
                 <div class="input-group">
                     <label for="expression" class="input-label">Ekspresi Wajah</label>
-                    <input type="text" id="expression" class="input-field" placeholder="Contoh: takjub, penuh tekad, gembira">
-                </div>
-                <div class="input-group">
-                    <label for="setting" class="input-label">Tempat/Latar</label>
-                    <input type="text" id="setting" class="input-field" placeholder="Contoh: perpustakaan tersembunyi, pasar malam neon">
+                     <select id="expression" class="select-field">
+                        <option value="" data-en="">-- Pilih Ekspresi --</option>
+                        <option value="senang" data-en="happy">Senang</option>
+                        <option value="sedih" data-en="sad">Sedih</option>
+                        <option value="marah" data-en="angry">Marah</option>
+                        <option value="takut" data-en="scared">Takut</option>
+                        <option value="terkejut" data-en="surprised">Terkejut</option>
+                        <option value="bingung" data-en="confused">Bingung</option>
+                        <option value="penasaran" data-en="curious">Penasaran</option>
+                        <option value="serius" data-en="serious">Serius</option>
+                        <option value="tenang" data-en="calm">Tenang</option>
+                        <option value="tertawa" data-en="laughing">Tertawa</option>
+                        <option value="menangis" data-en="crying">Menangis</option>
+                        <option value="bertekad" data-en="determined">Bertekad</option>
+                        <option value="takjub" data-en="amazed">Takjub</option>
+                        <option value="netral" data-en="neutral">Netral</option>
+                    </select>
+                    <input type="text" id="expressionCustom" class="input-field mt-2" placeholder="Atau ketik ekspresi kustom...">
+                    <p class="suggestion-tooltip">Pilih dari daftar atau ketik ekspresi spesifik.</p>
                 </div>
                  <div class="input-group">
-                    <label for="soundMusic" class="input-label">Suara atau Musik Latar</label>
-                    <input type="text" id="soundMusic" class="input-field" placeholder="Contoh: musik orkestra epik, suara alam menenangkan, synthwave">
+                    <label for="setting" class="input-label">Tempat/Latar</label>
+                    <select id="setting" class="select-field">
+                        <option value="" data-en="">-- Pilih Tempat/Latar --</option>
+                        <option value="hutan lebat" data-en="dense forest">Hutan Lebat</option>
+                        <option value="gunung tinggi" data-en="high mountain">Gunung Tinggi</option>
+                        <option value="pantai tropis" data-en="tropical beach">Pantai Tropis</option>
+                        <option value="kota metropolitan modern" data-en="modern metropolitan city">Kota Metropolitan Modern</option>
+                        <option value="desa kuno" data-en="ancient village">Desa Kuno</option>
+                        <option value="reruntuhan kuno" data-en="ancient ruins">Reruntuhan Kuno</option>
+                        <option value="luar angkasa" data-en="outer space">Luar Angkasa</option>
+                        <option value="planet alien" data-en="alien planet">Planet Alien</option>
+                        <option value="kastil megah" data-en="grand castle">Kastil Megah</option>
+                        <option value="perpustakaan tua" data-en="old library">Perpustakaan Tua</option>
+                        <option value="pasar malam ramai" data-en="bustling night market">Pasar Malam Ramai</option>
+                        <option value="laboratorium futuristik" data-en="futuristic laboratory">Laboratorium Futuristik</option>
+                        <option value="dunia bawah air" data-en="underwater world">Dunia Bawah Air</option>
+                        <option value="padang gurun luas" data-en="vast desert">Padang Gurun Luas</option>
+                        <option value="ruangan interior" data-en="interior room">Ruangan Interior</option>
+                        <option value="latar belakang abstrak" data-en="abstract background">Latar Belakang Abstrak</option>
+                    </select>
+                    <input type="text" id="settingCustom" class="input-field mt-2" placeholder="Atau ketik tempat/latar kustom...">
+                    <p class="suggestion-tooltip">Pilih dari daftar atau ketik tempat/latar spesifik.</p>
                 </div>
             </div>
 
             <div>
-                <div class="input-group">
+                 <div class="input-group">
                     <label for="time" class="input-label">Waktu</label>
                     <select id="time" class="select-field">
                         <option value="kapan saja" data-en="anytime">-- Pilih Waktu --</option>
@@ -283,6 +391,27 @@
                     </select>
                 </div>
                  <div class="input-group">
+                    <label for="soundMusic" class="input-label">Suara atau Musik Latar</label>
+                     <select id="soundMusic" class="select-field">
+                        <option value="" data-en="">-- Pilih Suara/Musik --</option>
+                        <option value="musik orkestra epik" data-en="epic orchestral music">Musik Orkestra Epik</option>
+                        <option value="musik elektronik futuristik" data-en="futuristic electronic music">Musik Elektronik Futuristik</option>
+                        <option value="musik jazz santai" data-en="relaxing jazz music">Musik Jazz Santai</option>
+                        <option value="musik rock energik" data-en="energetic rock music">Musik Rock Energik</option>
+                        <option value="musik tradisional etnik" data-en="ethnic traditional music">Musik Tradisional Etnik</option>
+                        <option value="suara alam (hutan, laut, hujan)" data-en="nature sounds (forest, ocean, rain)">Suara Alam (hutan, laut, hujan)</option>
+                        <option value="suara perkotaan" data-en="city ambience">Suara Perkotaan</option>
+                        <option value="hening" data-en="silence">Hening</option>
+                        <option value="lagu pop ceria" data-en="cheerful pop song">Lagu Pop Ceria</option>
+                        <option value="musik horor menegangkan" data-en="suspenseful horror music">Musik Horor Menegangkan</option>
+                        <option value="synthwave retro" data-en="retro synthwave">Synthwave Retro</option>
+                        <option value="lo-fi hip hop" data-en="lo-fi hip hop beats">Lo-fi Hip Hop</option>
+                        <option value="tidak ada suara/musik spesifik" data-en="no specific sound/music">Tidak Ada Suara/Musik Spesifik</option>
+                    </select>
+                    <input type="text" id="soundMusicCustom" class="input-field mt-2" placeholder="Atau ketik suara/musik kustom...">
+                    <p class="suggestion-tooltip">Pilih dari daftar atau ketik deskripsi suara/musik.</p>
+                </div>
+                 <div class="input-group">
                     <label for="spokenLines" class="input-label">Kalimat yang Diucapkan (Opsional)</label>
                     <input type="text" id="spokenLines" class="input-field" placeholder="Contoh: 'Kita berhasil!', 'Apa itu?'">
                 </div>
@@ -318,19 +447,27 @@
 
     <script>
         // Get DOM elements
-        const subjectEl = document.getElementById('subject');
-        const clothingEl = document.getElementById('clothing');
-        const originEl = document.getElementById('origin');
-        const actionEl = document.getElementById('action');
-        const expressionEl = document.getElementById('expression');
-        const settingEl = document.getElementById('setting');
+        const subjectSelectEl = document.getElementById('subject');
+        const subjectCustomEl = document.getElementById('subjectCustom');
+        const clothingSelectEl = document.getElementById('clothing');
+        const clothingCustomEl = document.getElementById('clothingCustom');
+        const originSelectEl = document.getElementById('origin');
+        const originCustomEl = document.getElementById('originCustom');
+        const actionSelectEl = document.getElementById('action');
+        const actionCustomEl = document.getElementById('actionCustom');
+        const expressionSelectEl = document.getElementById('expression');
+        const expressionCustomEl = document.getElementById('expressionCustom');
+        const settingSelectEl = document.getElementById('setting');
+        const settingCustomEl = document.getElementById('settingCustom');
+        const soundMusicSelectEl = document.getElementById('soundMusic');
+        const soundMusicCustomEl = document.getElementById('soundMusicCustom');
+
         const timeEl = document.getElementById('time');
         const cameraMovementEl = document.getElementById('cameraMovement');
         const lightingEl = document.getElementById('lighting');
         const videoStyleEl = document.getElementById('videoStyle');
         const videoQualityEl = document.getElementById('videoQuality');
         const videoMoodEl = document.getElementById('videoMood');
-        const soundMusicEl = document.getElementById('soundMusic');
         const spokenLinesEl = document.getElementById('spokenLines');
         const additionalDetailsEl = document.getElementById('additionalDetails');
         
@@ -351,15 +488,72 @@
         function getSelectedOptionDataEn(selectElement) {
             return selectElement.options[selectElement.selectedIndex].getAttribute('data-en') || selectElement.options[selectElement.selectedIndex].text;
         }
+        
+        // Function to get selected or custom value for an element with select and custom input
+        function getSelectedOrCustomValue(selectElement, customElement) {
+            const customValue = customElement.value.trim();
+            if (customValue) {
+                return { id: customValue, en: customValue };
+            }
+            const selectedValue = selectElement.value;
+            if (selectedValue) {
+                return { id: selectedValue, en: selectElement.options[selectElement.selectedIndex].getAttribute('data-en') || selectedValue };
+            }
+            return { id: '', en: '' }; 
+        }
+
+
+        // Clear custom input if a dropdown option is selected, and vice-versa
+        function setupDropdownSync(selectElement, customElement) {
+            selectElement.addEventListener('change', () => {
+                if (selectElement.value !== "") { 
+                    customElement.value = ""; 
+                }
+            });
+            customElement.addEventListener('input', () => {
+                 if (customElement.value.trim() !== "") {
+                    selectElement.selectedIndex = 0; 
+                 }
+            });
+        }
+        setupDropdownSync(subjectSelectEl, subjectCustomEl);
+        setupDropdownSync(clothingSelectEl, clothingCustomEl);
+        setupDropdownSync(originSelectEl, originCustomEl);
+        setupDropdownSync(actionSelectEl, actionCustomEl);
+        setupDropdownSync(expressionSelectEl, expressionCustomEl);
+        setupDropdownSync(settingSelectEl, settingCustomEl);
+        setupDropdownSync(soundMusicSelectEl, soundMusicCustomEl);
+
 
         generateBtn.addEventListener('click', () => {
-            const subject = subjectEl.value.trim();
-            const clothing = clothingEl.value.trim();
-            const origin = originEl.value.trim();
-            const action = actionEl.value.trim();
-            const expression = expressionEl.value.trim();
-            const setting = settingEl.value.trim();
+            const subjectInfo = getSelectedOrCustomValue(subjectSelectEl, subjectCustomEl);
+            const subjectId = subjectInfo.id;
+            const subjectEn = subjectInfo.en;
+
+            const clothingInfo = getSelectedOrCustomValue(clothingSelectEl, clothingCustomEl);
+            const clothingId = clothingInfo.id;
+            const clothingEn = clothingInfo.en;
+
+            const originInfo = getSelectedOrCustomValue(originSelectEl, originCustomEl);
+            const originId = originInfo.id;
+            const originEn = originInfo.en;
+
+            const actionInfo = getSelectedOrCustomValue(actionSelectEl, actionCustomEl);
+            const actionId = actionInfo.id;
+            const actionEn = actionInfo.en;
+
+            const expressionInfo = getSelectedOrCustomValue(expressionSelectEl, expressionCustomEl);
+            const expressionId = expressionInfo.id;
+            const expressionEn = expressionInfo.en;
+
+            const settingInfo = getSelectedOrCustomValue(settingSelectEl, settingCustomEl);
+            const settingId = settingInfo.id;
+            const settingEn = settingInfo.en;
             
+            const soundMusicInfo = getSelectedOrCustomValue(soundMusicSelectEl, soundMusicCustomEl);
+            const soundMusicId = soundMusicInfo.id;
+            const soundMusicEn = soundMusicInfo.en;
+
             const timeVal = timeEl.value;
             const timeTextId = getSelectedOptionText(timeEl);
             const timeTextEn = getSelectedOptionDataEn(timeEl);
@@ -384,18 +578,17 @@
             const videoMoodTextId = getSelectedOptionText(videoMoodEl);
             const videoMoodTextEn = getSelectedOptionDataEn(videoMoodEl);
 
-            const soundMusic = soundMusicEl.value.trim();
             const spokenLines = spokenLinesEl.value.trim(); 
             const additionalDetails = additionalDetailsEl.value.trim();
 
             // --- Indonesian Prompt Construction ---
             let promptId = "Visualisasikan sebuah adegan";
-            if (subject) promptId += ` dimana seorang ${subject}`;
-            if (clothing) promptId += ` yang mengenakan ${clothing}`;
-            if (origin) promptId += ` khas dari ${origin}`;
-            if (action) promptId += `, sedang melakukan ${action}`;
-            if (expression) promptId += ` dengan ekspresi wajah ${expression}`;
-            if (setting) promptId += `. Adegan ini berlatar di ${setting}`;
+            if (subjectId) promptId += ` dimana ${subjectId}`;
+            if (clothingId && clothingId !== "tidak mengenakan pakaian spesifik") promptId += ` yang mengenakan ${clothingId}`;
+            if (originId && originId !== "tidak spesifik") promptId += ` khas dari ${originId}`;
+            if (actionId && actionId !== "tidak ada aksi spesifik") promptId += `, sedang ${actionId}`;
+            if (expressionId && expressionId !== "netral") promptId += ` dengan ekspresi wajah ${expressionId}`;
+            if (settingId) promptId += `. Adegan ini berlatar di ${settingId}`;
             if (timeVal !== 'kapan saja') promptId += ` pada ${timeTextId}`;
             
             promptId += ". "; 
@@ -406,20 +599,20 @@
             if (videoQualityVal !== 'standar') promptId += `berkualitas ${videoQualityTextId}, `;
             if (videoMoodVal !== 'netral') promptId += `menciptakan suasana yang ${videoMoodTextId}. `;
             
-            if (soundMusic) promptId += `Terdengar ${soundMusic} sebagai latar. `;
+            if (soundMusicId && soundMusicId !== "tidak ada suara/musik spesifik") promptId += `Terdengar ${soundMusicId} sebagai latar. `;
             if (spokenLines) promptId += `Subjek mengucapkan: "${spokenLines}". `;
             if (additionalDetails) promptId += `Detail penting lainnya: ${additionalDetails}.`;
             
-            generatedPromptIndonesianEl.value = promptId.replace(/\s{2,}/g, ' ').trim();
+            generatedPromptIndonesianEl.value = promptId.replace(/\s{2,}/g, ' ').trim().replace(/\.\s*$/, "."); // Clean up extra spaces and trailing period if any before adding final period.
 
             // --- English Prompt Construction ---
             let promptEn = "Visualize a scene";
-            if (subject) promptEn += ` where a ${subject}`; 
-            if (clothing) promptEn += ` wearing ${clothing}`; 
-            if (origin) promptEn += ` typical of ${origin}`; 
-            if (action) promptEn += `, performing ${action}`; 
-            if (expression) promptEn += ` with a ${expression} facial expression`;
-            if (setting) promptEn += `. This scene is set in ${setting}`;
+            if (subjectEn) promptEn += ` where ${subjectEn}`; 
+            if (clothingEn && clothingEn !== "no specific clothing") promptEn += ` wearing ${clothingEn}`; 
+            if (originEn && originEn !== "not specific") promptEn += ` typical of ${originEn}`; 
+            if (actionEn && actionEn !== "no specific action") promptEn += `, ${actionEn}`; 
+            if (expressionEn && expressionEn !== "neutral") promptEn += ` with a ${expressionEn} facial expression`;
+            if (settingEn) promptEn += `. This scene is set in ${settingEn}`;
             if (timeVal !== 'kapan saja') promptEn += ` during ${timeTextEn}`;
             
             promptEn += ". ";
@@ -430,11 +623,12 @@
             if (videoQualityVal !== 'standar') promptEn += `of ${videoQualityTextEn} quality, `;
             if (videoMoodVal !== 'netral') promptEn += `creating a ${videoMoodTextEn} atmosphere. `;
 
-            if (soundMusic) promptEn += `${soundMusic} can be heard as background. `; 
+            if (soundMusicEn && soundMusicEn !== "no specific sound/music") promptEn += `${soundMusicEn} can be heard as background. `; 
             if (spokenLines) promptEn += `The subject says: "${spokenLines}". `; 
             if (additionalDetails) promptEn += `Other important details: ${additionalDetails}.`; 
 
-            generatedPromptEnglishEl.value = promptEn.replace(/\s{2,}/g, ' ').trim();
+            generatedPromptEnglishEl.value = promptEn.replace(/\s{2,}/g, ' ').trim().replace(/\.\s*$/, ".");
+
         });
 
         function copyToClipboard(text, successMessage, failureMessage) {
@@ -466,12 +660,13 @@
         
         resetBtn.addEventListener('click', () => {
             const fieldsToReset = [
-                subjectEl, clothingEl, originEl, actionEl, expressionEl, settingEl,
-                soundMusicEl, spokenLinesEl, additionalDetailsEl
+                subjectCustomEl, clothingCustomEl, originCustomEl, actionCustomEl, expressionCustomEl, settingCustomEl, soundMusicCustomEl,
+                spokenLinesEl, additionalDetailsEl
             ];
             fieldsToReset.forEach(field => field.value = '');
 
             const selectsToReset = [
+                subjectSelectEl, clothingSelectEl, originSelectEl, actionSelectEl, expressionSelectEl, settingSelectEl, soundMusicSelectEl,
                 timeEl, cameraMovementEl, lightingEl, videoStyleEl, videoQualityEl, videoMoodEl
             ];
             selectsToReset.forEach(select => select.selectedIndex = 0);
